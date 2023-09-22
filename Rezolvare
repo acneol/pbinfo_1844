@@ -1,0 +1,17 @@
+//ACESTA ESTE NUMAI SUBPROGRAMUL. DACA VRETI SA TESTATI VA TREBUI SA SCRIETI SINGURI FUNCTIA MAIN
+//Credits to DevLogWith_Alex (acneol)
+
+void num(int n, int v[])
+{
+    if(n==0)
+    {
+        v[n]=0;
+    }
+    else
+    {
+        if(v[n]<=v[0])
+            v[n]=0;
+       num(n-1, v);
+    }
+
+}
